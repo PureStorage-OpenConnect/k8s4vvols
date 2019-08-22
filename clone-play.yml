@@ -1,0 +1,12 @@
+- name: Overwrite vvol with pso volume data
+  hosts: localhost
+  gather_facts: no
+  tasks:
+  - name: migrate k8s to pks
+    purefa_volume:
+      name: "{{source_vol}}"
+      target: "{{vvol}}"
+      overwrite: yes
+      state: present
+      fa_url: <fa ip>
+      api_token: <fa api token>

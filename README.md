@@ -20,7 +20,7 @@ If you are using macosx and it is messing up your python environment you might n
 pip3 install kubernetes
 pip3 install purestorage
 ```
-It is also required to have Ansible installed.
+It is also required to have **Ansible 2.8.x** installed.
 
 ## How to use to import to PKS functions
 
